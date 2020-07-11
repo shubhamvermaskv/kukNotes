@@ -1,0 +1,11 @@
+*.log
+node_modules/
+test/
+package-lock.json
+old-files/
+*.rest
+test.ejs
+*.txt
+*.env              
+.vscode/
+ignore/
