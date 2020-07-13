@@ -3,6 +3,7 @@ const app = express();
 app.set('view-engine', 'ejs');
 app.set("port", process.env.PORT || 5000);
 app.use(express.static('public'));
+
 app
   .get(['/', '/home'], (req, res) => {
     res.render('index.ejs');
@@ -19,6 +20,10 @@ app
   .get('/fourthsemester', (req, res) => {
     res.render('fourthsemester.ejs');
   });
+
+app.get('/download', (req, res) => {
+  res.redirect('https://drive.google.com/file/d/1NnZFC0xyCec22RoNXYwoBnA0XL4VEKgO/view?usp=sharing');
+});
 
 app.listen(app.get("port"), (error) => {
   if (error) {
