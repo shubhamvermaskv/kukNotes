@@ -22,7 +22,7 @@ app
   });
 
 app.get('/download', (req, res) => {
-  res.redirect('https://drive.google.com/file/d/1NnZFC0xyCec22RoNXYwoBnA0XL4VEKgO/view?usp=sharing');
+  res.redirect('https://drive.google.com/file/d/1QMNqmISd6ivGHUyb27FCXola9lsnbaEk/view?usp=sharing');
 });
 
 app.listen(app.get("port"), (error) => {
