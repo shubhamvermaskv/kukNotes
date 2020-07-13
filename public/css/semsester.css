@@ -1,0 +1,48 @@
+.anc{
+  text-decoration: none;
+  color: blue;
+  /* font-family: 'Merienda One', cursive; */
+}
+
+.linkhead2{
+    font-family:'Graduate',cursive;
+    font-weight: bold;
+    color:black}
+
+.linkhead1{
+background-color: #f5f5f5; border: solid 1px #fca311;
+}
+
+
+
+ul {
+  margin: 0.55em 0.85em;
+  padding: 0 1em;
+  list-style: none;
+}
+li:before { 
+  content: "";
+  border-color: transparent #fac311;
+  border-style: solid;
+  border-width: 0.35em 0 0.35em 0.45em;
+  display: block;
+  height: 0;
+  width: 0;
+  left: -1em;
+  top: 0.9em;
+  position: relative;
+}
+
+ 
+
+
+.abc:hover {
+  text-decoration:underline;
+  color: #2997ff;
+}
+
+ 
+.fas {
+  margin: 3px;
+  font-size: 15px;
+}

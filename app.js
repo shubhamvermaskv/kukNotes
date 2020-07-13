@@ -17,7 +17,7 @@ app
   .get('/firstsemester', istSemester)
   .get('/secondsemester', iindSemester)
   .get('/thirdsemester', iiirdSemester)
-  .get('/fourthsemester', ivthSemester);
+  .get('/fourthsemester', ivthSemester)
 
 
 app.listen(app.get("port"), (error) => {
