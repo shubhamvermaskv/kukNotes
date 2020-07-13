@@ -1,29 +1,24 @@
 const express = require('express');
 const app = express();
+const ejs = require('ejs');
+const morgan = require('morgan');
+const istSemester = require('./routes/istsem');
+const iindSemester = require('./routes/iindsem');
+const iiirdSemester = require('./routes/iiirdsem');
+const ivthSemester = require('./routes/ivthsem');
+const home = require('./routes/home');
+
 app.set('view-engine', 'ejs');
 app.set("port", process.env.PORT || 5000);
 app.use(express.static('public'));
 
 app
-  .get(['/', '/home'], (req, res) => {
-    res.render('index.ejs');
-  })
-  .get('/firstsemester', (req, res) => {
-    res.render('firstsemester.ejs');
-  })
-  .get('/secondsemester', (req, res) => {
-    res.render('secondemester.ejs');
-  })
-  .get('/thirdsemester', (req, res) => {
-    res.render('thirdsemester.ejs');
-  })
-  .get('/fourthsemester', (req, res) => {
-    res.render('fourthsemester.ejs');
-  });
+  .get(['/', '/home'], home)
+  .get('/firstsemester', istSemester)
+  .get('/secondsemester', iindSemester)
+  .get('/thirdsemester', iiirdSemester)
+  .get('/fourthsemester', ivthSemester);
 
-app.get('/syllbus', (req, res) => {
-  res.redirect('https://vc536.pcloud.com/dpZTMFnIfZVrGbdWZ3pXp7ZZYMsH37Z2ZZDUHZZ3r0qLsYeKSf6yEYpg1kq4kQGiiHX/MCA%202017-18%20and%202018-19%20final%20%282%29.doc');
-});
 
 app.listen(app.get("port"), (error) => {
   if (error) {
