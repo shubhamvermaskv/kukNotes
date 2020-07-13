@@ -22,7 +22,7 @@ app
   });
 
 app.get('/download', (req, res) => {
-  res.redirect('https://drive.google.com/file/d/1QMNqmISd6ivGHUyb27FCXola9lsnbaEk/view?usp=sharing');
+  res.redirect('http://www.mediafire.com/file/4xintn3s2c3uaru/MCA_2017-18_and_2018-19_final_%25282%2529.doc/file');
 });
 
 app.listen(app.get("port"), (error) => {
