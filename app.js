@@ -21,8 +21,8 @@ app
     res.render('fourthsemester.ejs');
   });
 
-app.get('/download', (req, res) => {
-  res.redirect('http://www.mediafire.com/file/4xintn3s2c3uaru/MCA_2017-18_and_2018-19_final_%25282%2529.doc/file');
+app.get('/syllbus', (req, res) => {
+  res.redirect('https://vc536.pcloud.com/dpZTMFnIfZVrGbdWZ3pXp7ZZYMsH37Z2ZZDUHZZ3r0qLsYeKSf6yEYpg1kq4kQGiiHX/MCA%202017-18%20and%202018-19%20final%20%282%29.doc');
 });
 
 app.listen(app.get("port"), (error) => {
