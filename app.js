@@ -1,11 +1,10 @@
 const express = require("express");
 const app = express();
-const ejs = require("ejs");
 const morgan = require("morgan");
-const istSemester = require("./routes/istsem");
-const iindSemester = require("./routes/iindsem");
-const iiirdSemester = require("./routes/iiirdsem");
-const ivthSemester = require("./routes/ivthsem");
+const firstSemester = require("./routes/istsem");
+const secondSemester = require("./routes/iindsem");
+const thirdSemester = require("./routes/iiirdsem");
+const fourthSemester = require("./routes/ivthsem");
 const home = require("./routes/home");
 
 app.set("view-engine", "ejs");
@@ -14,10 +13,11 @@ app.use(express.static("public"));
 
 app
   .get(["/", "/home"], home)
-  .get("/firstsemester", istSemester)
-  .get("/secondsemester", iindSemester)
-  .get("/thirdsemester", iiirdSemester)
-  .get("/fourthsemester", ivthSemester);
+  .get("/about", home)
+  .get("/firstsemester", firstSemester)
+  .get("/secondsemester", secondSemester)
+  .get("/thirdsemester", thirdSemester)
+  .get("/fourthsemester", fourthSemester);
 
 app.listen(app.get("port"), (error) => {
   if (error) {
