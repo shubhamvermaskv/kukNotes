@@ -17,7 +17,8 @@ app
   .get("/firstsemester", firstSemester)
   .get("/secondsemester", secondSemester)
   .get("/thirdsemester", thirdSemester)
-  .get("/fourthsemester", fourthSemester);
+  .get("/fourthsemester", fourthSemester)
+  .get("/downlaod", home);
 
 app.listen(app.get("port"), (error) => {
   if (error) {
