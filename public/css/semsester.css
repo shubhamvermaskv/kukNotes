@@ -39,7 +39,7 @@ ul {
 }
 li:before {
   content: "";
-  border-color: transparent #fac311;
+  border-color: transparent #fca311;
   border-style: solid;
   border-width: 0.35em 0 0.35em 0.45em;
   display: block;
@@ -61,6 +61,12 @@ li:before {
 }
 
 .semsubs {
-  color: #fac311;
+  color: #fca311;
   font-weight: bold;
+}
+
+.isfourthdisable {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.5;
 }
