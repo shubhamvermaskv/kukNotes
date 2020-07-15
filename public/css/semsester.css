@@ -10,21 +10,24 @@
   color: blue;
   /* font-family: 'Merienda One', cursive; */
 }
-.linkhead1 {
-  /* background-color: #f5f5f5; */
-  /* border: solid 1px #fca311; */
+/* .linkhead1 {
   margin: 0px auto;
-  background: url(../asset/pattern.png) repeat;
-
+  
   box-shadow: 2px 0px 10px #dfdfdf;
   -webkit-box-shadow: 2px 0px 10px #dfdfdf;
   -moz-box-shadow: 2px 0px 10px #dfdfdf;
   -o-box-shadow: 2px 0px 10px #dfdfdf;
   -ms-box-shadow: 2px 0px 10px #dfdfdf;
-}
+} */
+/* background-color: #f5f5f5; */
+/* border: solid 1px #fca311; */
+/* background: url(../asset/pattern.png) repeat; */
 
 .linkhead2 {
-  font-family: "Graduate", cursive;
+  /* font-family: "Graduate", cursive;
+   */
+  font-family: "Merriweather", serif;
+
   font-weight: bold;
   color: black;
 }
@@ -55,4 +58,9 @@ li:before {
 .fas {
   margin: 3px;
   font-size: 15px;
+}
+
+.semsubs {
+  color: #fac311;
+  font-weight: bold;
 }

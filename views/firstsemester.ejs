@@ -1,37 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-	<%-include('allhead.ejs');%>
-  <link rel='stylesheet' , href="css/semsester.css">
-  
-</head>
-<body style="">
-  <!--header-->
-	<%-include( 'header.ejs');%>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <%-include('allhead.ejs');%>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" , href="css/semsester.css" />
+  </head>
+  <body style="">
+    <!--header-->
+    <%-include( 'header.ejs');%>
 
-<div class="linkhead1">
-  <h3 class="linkhead2">Quick links</u></h3>
-  <ul class="anc">
-    <li><a href='/syllbus' class="abc">Syllbus</a></li>
-    <li><a href="#" class="abc">Second Semester Notes</a></li>
-    <li><a href="#" class="abc">Third Semester Notes</a></li>
-    <li><a href="#" class="abc">Fourth Semester Notes</a></li>
-  </ul>
-</div>
+    <div class="linkhead1" style="margin: 10px auto;">
+      <h3 class="linkhead2" style="color: black;">
+        Quick links
+      </h3>
+      <!-- <ul class="anc"> -->
+      <div style="margin: 10px auto; padding: 0;">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a href="#" class="semsubs" target="_blank">Syllbus</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#" class="semsubs" target="_blank"
+              >Second Semester Notes</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a href="#" class="semsubs" target="_blank">Third Semester Notes</a>
+          </li>
+          <li class="list-group-item">
+            <a href="#" class="semsubs" target="_blank"
+              >Fourth Semester Notes</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- <li><a href="/syllbus" class="abc">Syllbus</a></li>
+        <li><a href="#" class="abc">Second Semester Notes</a></li>
+        <li><a href="#" class="abc">Third Semester Notes</a></li>
+        <li><a href="#" class="abc">Fourth Semester Notes</a></li>
+      </ul> -->
+    </div>
 
- <div style="height: 80vh; margin-top: 0px; padding: 0;">
+    <div style="margin: 10px auto; padding: 0;">
+      <h3 class="linkhead2" style="color: black;">
+        First Semester Notes Download Links
+      </h3>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <p class="semsubs" target="_blank">DATABASE SYSTEM</p>
+          <div style="display: inline-block; margin: auto auto;">
+            <button type="button" class="btn btn-outline-success">
+              Download as Zip File
+            </button>
+            <button type="button" class="btn btn-outline-success">
+              Download as RAR File
+            </button>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <p class="semsubs" target="_blank">COMPUTER NETWORKS</p>
+          <div style="display: inline-block; margin: auto auto;">
+            <button type="button" class="btn btn-outline-success">
+              Download as Zip File
+            </button>
+            <button type="button" class="btn btn-outline-success">
+              Download as RAR File
+            </button>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <p class="semsubs" target="_blank">JAVA PROGRAMMING</p>
+          <div style="display: inline-block; margin: auto auto;">
+            <button type="button" class="btn btn-outline-success">
+              Download as Zip File
+            </button>
+            <button type="button" class="btn btn-outline-success">
+              Download as RAR File
+            </button>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <p class="semsubs" target="_blank">THEORY OF COMPUTATION</p>
+          <div style="display: inline-block; margin: auto auto;">
+            <button type="button" class="btn btn-outline-success">
+              Download as Zip File
+            </button>
+            <button type="button" class="btn btn-outline-success">
+              Download as RAR File
+            </button>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <p class="semsubs" target="_blank">
+            OBJECT ORIENTED ANALYSIS AND DESIGN USING Unified Modeling
+            Language(UML)
+          </p>
+          <div style="display: inline-block; margin: auto auto;">
+            <button type="button" class="btn btn-outline-success">
+              Download as Zip File
+            </button>
+            <button type="button" class="btn btn-outline-success">
+              Download as RAR File
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
 
- </div>
-  <!--footer-->
-  <div style="background-color: black;">
-    <%-include( 'footer.ejs');%>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  
-</body>
+    <!--footer-->
+    <div style="background-color: black;">
+      <%-include( 'footer.ejs');%>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

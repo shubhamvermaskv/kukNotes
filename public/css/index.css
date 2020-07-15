@@ -9,6 +9,13 @@ body {
 
   /* font-family: "Playfair Display", serif; */
 }
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+  pointer-events: none;
+}
 .bg {
   background-attachment: fixed;
   background-image: url("../asset/1_1594687796240.jpg");
