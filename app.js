@@ -20,7 +20,8 @@ app
   .get("/fourthsemester", fourthSemester)
   .get("/downlaod", home)
   .get("/javazip", firstSemester)
-  .get("/javarar", firstSemester);
+  .get("/javarar", firstSemester)
+  .get("/secondyearsyllbus", home);
 
 app.listen(app.get("port"), (error) => {
   if (error) {

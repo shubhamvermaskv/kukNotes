@@ -11,4 +11,9 @@ home.get("/about", (req, res) => {
     res.end(data);
   });
 });
+home.get("/secondyearsyllbus", (req, res) => {
+  res.redirect(
+    "http://www.mediafire.com/file/4xintn3s2c3uaru/MCA_2017-18_and_2018-19_final%255Bdocument%255D.doc/file"
+  );
+});
 module.exports = home;
